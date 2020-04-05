@@ -9,4 +9,8 @@ project/3dPrinterCaseController.cpp.o: ../../3dPrinterCaseController.cpp \
  C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/Printable.h \
  C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/USBAPI.h \
  C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h \
- C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/standard/pins_arduino.h
+ C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/standard/pins_arduino.h \
+ ../../OneWire\OneWire.h ../../OneWire\util/OneWire_direct_regtype.h \
+ ../../Arduino-Temperature-Control-Library/DallasTemperature.h \
+ ../../Arduino-Temperature-Control-Library/..\OneWire\OneWire.h \
+ ../../TemperatureSensor.h

@@ -11,6 +11,9 @@ endif
 
 PROJECT_OBJS = \
 	project/3dPrinterCaseController.cpp.o \
+	project/Arduino-Temperature-Control-Library/DallasTemperature.cpp.o \
+	project/OneWire/OneWire.cpp.o \
+	project/TemperatureSensor.cpp.o \
 
 PLATFORM_CORE_OBJS = \
 	core/abi.cpp.o \
@@ -74,6 +77,30 @@ project/3dPrinterCaseController.cpp.o: ../../3dPrinterCaseController.cpp project
 project/3dPrinterCaseController.cpp.d: ;
 
 -include project/3dPrinterCaseController.cpp.d 
+
+project/Arduino-Temperature-Control-Library/DallasTemperature.cpp.o: ../../Arduino-Temperature-Control-Library/DallasTemperature.cpp project/Arduino-Temperature-Control-Library/DallasTemperature.cpp.d
+	@$(call mymkdir,$(dir $@))
+	"C:/Users/awsei/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR   -I"C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/standard" "$<" -o "$@"
+
+project/Arduino-Temperature-Control-Library/DallasTemperature.cpp.d: ;
+
+-include project/Arduino-Temperature-Control-Library/DallasTemperature.cpp.d 
+
+project/OneWire/OneWire.cpp.o: ../../OneWire/OneWire.cpp project/OneWire/OneWire.cpp.d
+	@$(call mymkdir,$(dir $@))
+	"C:/Users/awsei/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR   -I"C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/standard" "$<" -o "$@"
+
+project/OneWire/OneWire.cpp.d: ;
+
+-include project/OneWire/OneWire.cpp.d 
+
+project/TemperatureSensor.cpp.o: ../../TemperatureSensor.cpp project/TemperatureSensor.cpp.d
+	@$(call mymkdir,$(dir $@))
+	"C:/Users/awsei/.arduinocdt/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino5/bin/avr-g++" -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10608 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR   -I"C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino" -I"C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/variants/standard" "$<" -o "$@"
+
+project/TemperatureSensor.cpp.d: ;
+
+-include project/TemperatureSensor.cpp.d 
 
 
 core/abi.cpp.o: C:/Users/awsei/.arduinocdt/packages/arduino/hardware/avr/1.8.2/cores/arduino/abi.cpp core/abi.cpp.d
