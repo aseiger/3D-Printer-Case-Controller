@@ -15,4 +15,7 @@ project/3dPrinterCaseController.cpp.o: ../../3dPrinterCaseController.cpp \
  C:/Users/awsei/.arduinocdt/libraries/DallasTemperature/3.8.0/DallasTemperature.h \
  C:/Users/awsei/.arduinocdt/libraries/Servo/1.1.6/src/Servo.h \
  C:/Users/awsei/.arduinocdt/libraries/Servo/1.1.6/src/avr/ServoTimers.h \
- ../../TemperatureSensor.h ../../ValveControl.h
+ C:/Users/awsei/.arduinocdt/libraries/PacketSerial/1.4.0/src/PacketSerial.h \
+ C:/Users/awsei/.arduinocdt/libraries/PacketSerial/1.4.0/src/Encoding/COBS.h \
+ C:/Users/awsei/.arduinocdt/libraries/PacketSerial/1.4.0/src/Encoding/SLIP.h \
+ ../../Communications.h ../../TemperatureSensor.h ../../ValveControl.h
